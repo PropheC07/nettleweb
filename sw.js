@@ -10,8 +10,7 @@
 	const errorResponse = Response.error();
 
 	/**
-	 * 
-	 * @param {Request} request 
+	 * @param {Request} request
 	 * @returns {Promise<Response>}
 	 */
 	async function optFetch(request) {
@@ -23,7 +22,7 @@
 	}
 
 	/**
-	 * @param {FetchEvent} e 
+	 * @param {FetchEvent} e
 	 * @returns {Promise<Response>}
 	 */
 	async function handleFetch(e) {
@@ -75,13 +74,13 @@
 	}
 
 	/**
-	 * @param {ExtendableMessageEvent} e 
+	 * @param {ExtendableMessageEvent} e
 	 */
 	async function handleMessage(e) {
 	}
 
 	/**
-	 * @param {ExtendableEvent} e 
+	 * @param {ExtendableEvent} e
 	 */
 	async function handleInstall(e) {
 		const cache = await caches.open(cacheName);
@@ -89,7 +88,7 @@
 	}
 
 	/**
-	 * @param {ExtendableEvent} e 
+	 * @param {ExtendableEvent} e
 	 */
 	async function handleActivate(e) {
 		await self.clients.claim();
