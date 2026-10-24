@@ -10,9 +10,13 @@ optgroup {
 	background: #404040;
 }
 
-#nwidget {
-	display: none !important;
+#nwidget,
+.news,
+#news,
+.widget-news {
+    display: none !important;
 }
+
 
 
 #logo,
